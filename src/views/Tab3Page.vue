@@ -37,7 +37,11 @@ export default defineComponent({
         const cameraPreviewOptions: CameraPreviewOptions = {
           position: 'front',
           parent: 'cameraPreview',
-          className: 'cameraPreview'
+          className: 'cameraPreview',
+          height: 1000,
+          width: 2000,
+          enableHighResolution: true,
+          enableZoom: true
         };
       CameraPreview.start(cameraPreviewOptions);
       console.log('feur');
